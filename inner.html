@@ -7,14 +7,17 @@
 <body>
   <header>
     <nav>
-      <a><img src="#" width="" height="" alt="Логотип дизайн-студии Нёрдс"></a>
+      <a>
+        <img src="#" alt="Логотип дизайн-студии Нёрдс">
+      </a>
       <ul>
         <li><a href="studio.html">Студия</a></li>
         <li><a href="clientele.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
-        <li><a href="backet.html">Корзина</a></li>
       </ul>
+      <a href="backet.html">Корзина</a>
+      
     </nav>
   </header>
   <main>
@@ -25,66 +28,80 @@
      <aside>
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <!--тут будет форма, сортировка по цене и дате-->
-      <ul class="setka">
-        <li>Адаптивная</li>
-        <li>Фиксированная</li>
-        <li>Резиновая</li>
-      </ul>
-      <ul class="feature">
-        <li>Слайдер</li>
-        <li>Блок преимуществ</li>
-        <li>Новости</li>
-        <li>Галерея</li>
-        <li>Корзина</li>
-      </ul>
-    </aside>
-    <main>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <h3>Sedona  
-            <p>Информационный сайт для туристов</p>
-          </h3>
-          <a class="button">9 900 РУБ.
-          </a>
-          <img src="#" width="" height="" alt="Sedona">
-        </li>
-        <li class="catalog-item">
-          <h3>Pink</h3>
-          <img src="#" width="" height="" alt="Pink">
-        </li>
-        <li class="catalog-item">
-          <h3>Барбершоп</h3>
-          <img src="#" width="" height="" alt="Borodinsky">
-        </li>
-        <li class="catalog-item">
-          <h3>Mishka</h3>
-          <img src="#" width="" height="" alt="Mishka">
-        </li>
-        <li class="catalog-item">
-          <h3>A+</h3>
-          <img src="#" width="" height="" alt="A+">
-        </li>
-        <li class="catalog-item">
-          <h3>Кваст</h3>
-          <img src="#" width="" height="" alt="Кваст">
-        </li>
-      </ul>
-    </main>
-  </section>
-  <section>
-    <!--тут нумерация страниц и карта-->
-  </section>
+      <h3>Сетка</h3>
+      <form>
+        <label>
+          <input type="radio" name="1" checked>Адаптивная
+        </label> 
+        <br>
+        <label> 
+         <input type="radio" name="2">  Фиксированная
+       </label>
+       <br>
+       <label>
+        <input type="radio" name="3"> Резиновая
+      </label>
+    </form>
+    <h3>Особенности</h3>
+    <form>
+      <input type="checkbox" checked>Слайдер
+      <br>
+      <input type="checkbox">Блок преимуществ
+      <br>
+      <input type="checkbox" checked> Новости
+      <br>
+      <input type="checkbox">Галерея
+      <br>
+      <input type="checkbox">Корзина
+    </form>
+    <input type="submit" value="Показать">
+  </aside>
+  <main>
+    <ul class="catalog-list">
+      <li class="catalog-item">
+        <h3>Sedona</h3>
+        <p>Информационный сайт для туристов</p>
+        <a class="button">9 900 РУБ.
+        </a>
+        <img src="#" alt="Sedona">
+      </li>
+      <li class="catalog-item">
+        <h3>Pink</h3>
+        <img src="#"  alt="Pink">
+      </li>
+      <li class="catalog-item">
+        <h3>Барбершоп</h3>
+        <img src="#"  alt="Borodinsky">
+      </li>
+      <li class="catalog-item">
+        <h3>Mishka</h3>
+        <img src="#" alt="Mishka">
+      </li>
+      <li class="catalog-item">
+        <h3>A+</h3>
+        <img src="#"  alt="A+">
+      </li>
+      <li class="catalog-item">
+        <h3>Кваст</h3>
+        <img src="#"  alt="Кваст">
+      </li>
+    </ul>
+  </main>
+</section>
+<section>
+  <!--тут нумерация страниц и карта-->
+</section>
 </main>
 <footer class="main-footer">
-  <div class="footer-social">
-    <ul>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
-    </ul>
-  </div>
-  <h3>Давайте дружить, это выгодно!</h3>
-  <p>Скидка 10% для друзей из социальных сетей.</p>
+  <ul>
+    <li><a class="social-button" href="#">Вконтакте</a></li>
+    <li><a class="social-button" href="#">Фейсбук</a></li>
+    <li><a class="social-button" href="#">Инстаграм</a></li>
+  </ul>
+  <section>
+    <h3>Давайте дружить, это выгодно!</h3>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </section>
 </footer>
 </body>
 </html>   
