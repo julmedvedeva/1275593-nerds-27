@@ -27,31 +27,51 @@
       </header>
       <aside>
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!--тут будет форма, сортировка по цене и дате-->
-      <form>
+      <form method="get" action="">
         <fieldset>
           <legend>Стоимость:</legend>
           <label>
             <input type="range" min="0" max="15000" step="1">
           </label>
           <legend>Сетка</legend>
-          <label>
-            <input type="radio" name="1" checked>Адаптивная
-          </label> 
-          <label> 
-            <input type="radio" name="2">  Фиксированная
-          </label>
-          <label>
-            <input type="radio" name="3"> Резиновая
-          </label>
+          <ul>
+            <li>
+              <input type="radio" name="grid" id="filter-adaptable" value="adaptable" checked>
+              <label for="filter-adaptable">Адаптивная</label> 
+            </li>
+            <li>
+              <input type="radio" name="grid" id="filter-fixed" value="fixed"> <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" id="filter-elastic" value="elastic">
+              <label for="filter-elastic">Резиновая</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Особенности</legend>
-          <input type="checkbox" checked>Слайдер
-          <input type="checkbox">Блок преимуществ
-          <input type="checkbox" checked> Новости
-          <input type="checkbox">Галерея
-          <input type="checkbox">Корзина
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="array-of-benefits" id="filter-array-of-benefits">
+              <label for="filter-array-of-benefits">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
         </fieldset>
         <button type="submit">Показать</button>
       </form>
@@ -104,7 +124,7 @@
         </ul>
       </section>
       <section>
-        <img src="img/map.jpg" alt="Как нас найти">
+        <img src="img/map.jpg" alt="Студия находится по адресу ул. Большая Конюшенная, д. 19/8">
         <address>
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург,<br>
@@ -112,6 +132,21 @@
           <p>тел. +7 (813) 275-75 75</p>
           <a class="button">Напишите нам</a>
         </address>
+        <section class="pop-up">
+          <form action="" method="get">
+            <h2>Напишите нам</h2>
+            <label for="Your-name">Ваше имя:
+              <input type="text" name="username" id="Your-name" placeholder="Имя Фамилия">
+            </label>
+            <label for="Your-email">Ваш e-mail:
+              <input type="text" name="e-mail" id="Your-email" placeholder="email@example.com"> 
+            </label>
+            <label>Текст письма:
+             <textarea placeholder="В свободной форме"></textarea>
+            </label>
+            <input type="submit" value="Отправить">
+          </form>
+        </section>
       </section>
     </main>
     <footer class="main-footer">
@@ -126,4 +161,4 @@
       </section>
     </footer>
   </body>
-  </html>   
+</html>   
