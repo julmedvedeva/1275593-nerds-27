@@ -27,31 +27,67 @@
       </header>
       <aside>
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!--тут будет форма, сортировка по цене и дате-->
-      <form>
+      <form method="get" action="">
         <fieldset>
           <legend>Стоимость:</legend>
-          <label>
-            <input type="range" min="0" max="15000" step="1">
-          </label>
+          <input type="range" min="0" max="15000" step="1">
+        </fieldset>
+        <fieldset>
           <legend>Сетка</legend>
-          <label>
-            <input type="radio" name="1" checked>Адаптивная
-          </label> 
-          <label> 
-            <input type="radio" name="2">  Фиксированная
-          </label>
-          <label>
-            <input type="radio" name="3"> Резиновая
-          </label>
+          <ul>
+            <li>
+              <label for="filter-adaptable">
+                Адаптивная
+              <input type="radio" name="grid" id="filter-adaptable" value="adaptable" checked>
+              </label> 
+            </li>
+            <li>
+              <label for="filter-fixed"> 
+                Фиксированная
+              <input type="radio" name="grid" id="filter-fixed" value="fixed"> </label>
+            </li>
+            <li>
+              <label for="filter-elastic">
+                Резиновая
+              <input type="radio" name="grid" id="filter-elastic" value="elastic">
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Особенности</legend>
-          <input type="checkbox" checked>Слайдер
-          <input type="checkbox">Блок преимуществ
-          <input type="checkbox" checked> Новости
-          <input type="checkbox">Галерея
-          <input type="checkbox">Корзина
+          <ul>
+            <li>
+              <label for="filter-slider">
+                Слайдер
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              </label>
+            </li>
+            <li>
+              <label for="filter-array-of-benefits">
+                Блок преимуществ
+              <input type="checkbox" name="array-of-benefits" id="filter-array-of-benefits">
+              </label>
+            </li>
+            <li>
+              <label for="filter-news">
+                Новости
+              <input type="checkbox" name="news" id="filter-news" checked>
+              </label>
+            </li>
+            <li>
+              <label for="filter-gallery">
+                Галерея
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              </label>
+            </li>
+            <li>
+              <label for="filter-basket"> 
+                Корзина
+              <input type="checkbox" name="basket" id="filter-basket">
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <button type="submit">Показать</button>
       </form>
@@ -104,7 +140,7 @@
         </ul>
       </section>
       <section>
-        <img src="img/map.jpg" alt="Как нас найти">
+        <img src="img/map.jpg" alt="Студия находится по адресу ул. Большая Конюшенная, д. 19/8">
         <address>
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург,<br>
@@ -112,6 +148,24 @@
           <p>тел. +7 (813) 275-75 75</p>
           <a class="button">Напишите нам</a>
         </address>
+        <section class="pop-up">
+          <form action="" method="get">
+            <h2>Напишите нам</h2>
+            <div>
+              <label for="Your-name">Ваше имя:</label>
+              <input type="text" name="username" id="Your-name" placeholder="Имя Фамилия">
+            </div>
+            <div>
+             <label for="Your-email">Ваш e-mail:</label>
+              <input type="text" name="e-mail" id="Your-email" placeholder="email@example.com"> 
+            </div>
+            <div>
+              <label>Текст письма:</label>
+              <textarea placeholder="В свободной форме"></textarea>
+            </div>
+            <button type="submit" value="Отправить">Отправить</button>
+          </form>
+        </section>
       </section>
     </main>
     <footer class="main-footer">
@@ -126,4 +180,4 @@
       </section>
     </footer>
   </body>
-  </html>   
+</html>   

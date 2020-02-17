@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
 </head>
@@ -21,7 +22,7 @@
     <a href="#">Корзина</a>
   </header>
   <main>
-    <section>
+    <section class="slide">
       <ul>
         <li>
           <img src="img/slide/slide1.png" alt="Долго, дорого, скрупулезно">
@@ -104,7 +105,7 @@
       </ul>
     </section>
     <section>
-        <img src="img/map.jpg" alt="Как нас найти">
+        <img src="img/map.jpg" alt="Студия находится по адресу ул. Большая Конюшенная, д. 19/8">
         <address>
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург,<br>
@@ -112,6 +113,18 @@
           <p>тел. +7 (813) 275-75 75</p>
           <a class="button">Напишите нам</a>
         </address>
+        <section class="pop-up">
+          <form action="" method="get">
+            <h2>Напишите нам</h2>
+            <label for="Your-name">Ваше имя:</label>
+              <input type="text" name="username" id="Your-name" placeholder="Имя Фамилия">
+            <label for="Your-email">Ваш e-mail:</label>
+              <input type="text" name="e-mail" id="Your-email" placeholder="email@example.com"> 
+            <label>Текст письма:</label>
+             <textarea placeholder="В свободной форме"></textarea>
+            <input type="submit" value="Отправить">
+          </form>
+        </section>
     </section>
   </main> 
   <footer class="main-footer">
