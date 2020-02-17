@@ -30,21 +30,24 @@
       <form method="get" action="">
         <fieldset>
           <legend>Стоимость:</legend>
-          <label>
-            <input type="range" min="0" max="15000" step="1">
-          </label>
+          <input type="range" min="0" max="15000" step="1">
+        </fieldset>
+        <fieldset>
           <legend>Сетка</legend>
           <ul>
             <li>
+              <label for="filter-adaptable">Адаптивная
               <input type="radio" name="grid" id="filter-adaptable" value="adaptable" checked>
-              <label for="filter-adaptable">Адаптивная</label> 
+              </label> 
             </li>
             <li>
-              <input type="radio" name="grid" id="filter-fixed" value="fixed"> <label for="filter-fixed">Фиксированная</label>
+              <label for="filter-fixed">Фиксированная
+              <input type="radio" name="grid" id="filter-fixed" value="fixed"> </label>
             </li>
             <li>
+              <label for="filter-elastic">Резиновая
               <input type="radio" name="grid" id="filter-elastic" value="elastic">
-              <label for="filter-elastic">Резиновая</label>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -52,24 +55,29 @@
           <legend>Особенности</legend>
           <ul>
             <li>
+              <label for="filter-slider">Слайдер
               <input type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider">Слайдер</label>
+              </label>
             </li>
             <li>
+              <label for="filter-array-of-benefits">Блок преимуществ
               <input type="checkbox" name="array-of-benefits" id="filter-array-of-benefits">
-              <label for="filter-array-of-benefits">Блок преимуществ</label>
+              </label>
             </li>
             <li>
+              <label for="filter-news">Новости
               <input type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
+              </label>
             </li>
             <li>
+              <label for="filter-gallery">Галерея
               <input type="checkbox" name="gallery" id="filter-gallery">
-              <label for="filter-gallery">Галерея</label>
+              </label>
             </li>
             <li>
+              <label for="filter-basket">Корзина
               <input type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -135,16 +143,19 @@
         <section class="pop-up">
           <form action="" method="get">
             <h2>Напишите нам</h2>
-            <label for="Your-name">Ваше имя:
+            <div>
+              <label for="Your-name">Ваше имя:</label>
               <input type="text" name="username" id="Your-name" placeholder="Имя Фамилия">
-            </label>
-            <label for="Your-email">Ваш e-mail:
+            </div>
+            <div>
+             <label for="Your-email">Ваш e-mail:</label>
               <input type="text" name="e-mail" id="Your-email" placeholder="email@example.com"> 
-            </label>
-            <label>Текст письма:
-             <textarea placeholder="В свободной форме"></textarea>
-            </label>
-            <input type="submit" value="Отправить">
+            </div>
+            <div>
+              <label>Текст письма:</label>
+              <textarea placeholder="В свободной форме"></textarea>
+              <button type="submit" value="Отправить">Отправить</button>
+            </div>
           </form>
         </section>
       </section>
