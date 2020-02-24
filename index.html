@@ -1,109 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header-main">
-      <a class="header-main-logo">
-      <img  src="img/logo/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" >  
-      </a>
+    <header class="top-menu">
       <nav class="navigation">
+        <a class="header-logo" href="#">
+        <img  src="img/logo/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" >  
+        </a>
         <ul class="menu">
           <li class="menu-item"><a href="#">Студия</a></li>
           <li class="menu-item"><a href="#">Клиенты</a></li>
           <li class="menu-item"><a href="#">Магазин</a></li>
           <li class="menu-item"><a href="#">Контакты</a></li>
         </ul>
+        <a class="basket" href="#">
+          <img src="img/cart-icon.svg">Корзина
+        </a>
       </nav>
-      <img src="img/cart-icon.svg">
-      <a class="basket" href="#">Корзина</a>
+      
     </header>
     <main>
       <section class="slider">
         <ul class="slider-list">
           <li class="slider-item">
-            <img src="img/slide/slide1.png" alt="Долго, дорого, скрупулезно">
             <h1>Долго, дорого, скрупулезно.</h1>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения </p>
-            <a href="#" class="button">Узнать больше</a>
+            <p>Математически выверенный дизайн <br> 
+            для вашего сайта или мобильного приложения </p>
+            <a href="#" class="button button-red">Узнать больше</a>
           </li>
-          <li class="slider-item">
-            <img src="img/slide/slide2.jpg" alt="Любим математику как никто другой">
+          <!--<li class="slider-item">
             <h1>Любим математику как никто другой</h1>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a href="#" class="button">Узнать больше</a>
+            <a href="#" class="button button-red">Узнать больше</a>
           </li>
           <li class="slider-item">
-            <img src="img/slide/slide3.jpg" alt="Любим математику как никто другой">
             <h1>Только ночь,только хардкор</h1>
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#" class="button">Узнать больше</a>
-          </li>
+            <a href="#" class="button button-red">Узнать больше</a>
+          </li> -->
         </ul>
       </section>
       <section class="services">
         <h2 class="visually-hidden">Продукты</h2>
         <ul class="services-list">
-          <li class="services-item">
-            <img src="img/illustration/illustration-1.jpg" alt="Веб-сайты">
-            <h4>Веб-сайты</h4>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="button">Заказать</a>
-          </li>
-          <li class="services-item">
-            <img src="img/illustration/illustration-2.jpg" alt="Приложения">
-            <h4>Приложения</h4>
-            <p>Покорите топ-10 приложений в AppStore  Google Play</p>
-            <a href="#" class="button">Заказать</a>
-          </li>
-          <li class="services-item">
-            <img src="img/illustration/illustration-3.jpg" alt="Презентации">
-            <h4>Презентации</h4>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#" class="button">Заказать</a>
-          </li>
+          <div class="services-item">
+            <li>
+              <img src="img/illustration/illustration-1.jpg" alt="Веб-сайты">
+              <h4>Веб-сайты</h4>
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a href="#" class="button button-red-xs">Заказать</a>
+            </li>
+          </div>
+          <div class="services-item">
+            <li>
+              <img src="img/illustration/illustration-2.jpg" alt="Приложения">
+              <h4>Приложения</h4>
+              <p>Покорите топ-10 приложений в AppStore  Google Play</p>
+              <a href="#" class="button button-green">Заказать</a>
+            </li>
+          </div>
+          <div class="services-item">
+            <li>
+              <img src="img/illustration/illustration-3.jpg" alt="Презентации">
+              <h4>Презентации</h4>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a href="#" class="button button-yellow">Заказать</a>
+            </li>
+          </div>
         </ul>
       </section> 
-      <div>
-        <section class="about">
-          <h2 class="visually-hidden">О нас</h2>
-          <article>
-            <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.  
-            </p>
-            <ul class="activity-list">
-              <h6>Выполняем заказы на разработку:</h6>
-              <li class="activity-item">Веб-сайтов любой сложности </li>
-              <li class="activity-item">Мобильных приложений для iOS и Android</li>
-              <li class="activity-item">Cлайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-          </article>
-          <article>
-            <img src="img/illustration/nerds-illustration.jpg" alt="Логотип дизайн-студии  Nёrd's">
-            <h6>С 2004 года любим точность во всем:</h6>
-            <div class="statistics">
-              <ul class="statistics-list">
-                <li class="statistics-item"> 146% Уровень самоотдачи</li>
-                <li class="statistics-item"> 100% Соблюдение сроков </li>
-                <li class="statistics-item"> 50% Минимальная предоплата </li>
+      <section >
+        <h2 class="visually-hidden">О нас</h2>
+          <div class="stat">
+            <article class="about">
+              <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
+              <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.  
+              </p>
+              <ul class="activity-list">
+                <h6>Выполняем заказы на разработку:</h6>
+                <li class="activity-item">Веб-сайтов любой сложности </li>
+                <li class="activity-item">Мобильных приложений для iOS и Android</li>
+                <li class="activity-item">Cлайдшоу и видео для корпоративных презентаций</li>
               </ul>
-          </article>
-        </section> 
-      </div>
+            </article>
+          </div>
+          <div>
+           
+              <img src="img/illustration/nerds-illustration.jpg" alt="Логотип дизайн-студии  Nёrd's">
+              <h6>С 2004 года любим точность во всем:</h6>
+              
+                <ul class="statistics-list">
+                  <li class="statistics-item"> 146% Уровень самоотдачи</li>
+                  <li class="statistics-item"> 100% Соблюдение сроков </li>
+                  <li class="statistics-item"> 50% Минимальная предоплата </li>
+                </ul>
+              
+           
+          </div>
+         </section> 
+      
       <section class="brands">
         <h2 class="visually-hidden">Наши клиенты</h2>
         <ul class="brands-list">
-          <li class="brands-item"><a href="#"><img src="img/logo/logo-1.png" alt="html academy"></a></li>
+          <div class="brands-item">
+          <li ><a href="#"><img src="img/logo/logo-1.png" alt="html academy"></a></li>
+          </div>
+          <div class="brands-item">
           <li class="brands-item"><a href="#"><img src="img/logo/logo-2.png" alt="Barbershop Borodinsky"></a></li>
+          </div>
+          <div class="brands-item">
           <li class="brands-item"><a href="#"><img src="img/logo/logo-3.png" alt="Pink"></a></li>
+          </div>
+          <div class="brands-item">
           <li class="brands-item"><a href="#"><img src="img/logo/logo-4.png" alt="Mishka"></a></li>
+          </div>
         </ul>
       </section>
-      <section class="address">
+      <section class="contacts">
         <img src="img/map.jpg" alt="Студия находится по адресу ул. Большая Конюшенная, д. 19/8">
         <address>
           <h3>Nёrds design studio</h3>

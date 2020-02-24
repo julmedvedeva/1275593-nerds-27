@@ -1,97 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <a>
-        <img src="img/logo/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="top-menu">
+      <a class="header-logo">
+      <img src="img/logo/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс">
       </a>
-      <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <img src="img/cart-icon.svg">
-      <a href="#">Корзина</a>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <header>
-       <h1>Магазин готовых шаблонов</h1>
-      </header>
-      <aside>
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form method="get" action="">
-        <fieldset>
-          <legend>Стоимость:</legend>
-          <input type="range" min="0" max="15000" step="1">
-        </fieldset>
-        <fieldset>
-          <legend>Сетка</legend>
-          <ul>
-            <li>
-              <label for="filter-adaptable">
+      <nav class="navigation">
+        <ul class="menu">
+          <li class="menu-item"><a href="#">Студия</a></li>
+          <li class="menu-item"><a href="#">Клиенты</a></li>
+          <li class="menu-item"><a href="#">Магазин</a></li>
+          <li class="menu-item"><a href="#">Контакты</a></li>
+        </ul>
+        <img src="img/cart-icon.svg">
+        <a class="basket" href="#">Корзина</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <header>
+          <h2 class="visually-hidden">Готовые шаблоны</h2>
+          <h1>Магазин готовых шаблонов</h1>
+        </header>
+        <aside>
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form method="get" action="">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <input type="range" min="0" max="15000" step="1">
+          </fieldset>
+          <fieldset>
+            <legend>Сетка</legend>
+            <ul>
+              <li>
+                <label for="filter-adaptable">
                 Адаптивная
-              <input type="radio" name="grid" id="filter-adaptable" value="adaptable" checked>
-              </label> 
-            </li>
-            <li>
-              <label for="filter-fixed"> 
+                <input type="radio" name="grid" id="filter-adaptable" value="adaptable" checked>
+                </label> 
+              </li>
+              <li>
+                <label for="filter-fixed"> 
                 Фиксированная
-              <input type="radio" name="grid" id="filter-fixed" value="fixed"> </label>
-            </li>
-            <li>
-              <label for="filter-elastic">
+                <input type="radio" name="grid" id="filter-fixed" value="fixed"> </label>
+              </li>
+              <li>
+                <label for="filter-elastic">
                 Резиновая
-              <input type="radio" name="grid" id="filter-elastic" value="elastic">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Особенности</legend>
-          <ul>
-            <li>
-              <label for="filter-slider">
+                <input type="radio" name="grid" id="filter-elastic" value="elastic">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+            <ul>
+              <li>
+                <label for="filter-slider">
                 Слайдер
-              <input type="checkbox" name="slider" id="filter-slider" checked>
-              </label>
-            </li>
-            <li>
-              <label for="filter-array-of-benefits">
+                <input type="checkbox" name="slider" id="filter-slider" checked>
+                </label>
+              </li>
+              <li>
+                <label for="filter-array-of-benefits">
                 Блок преимуществ
-              <input type="checkbox" name="array-of-benefits" id="filter-array-of-benefits">
-              </label>
-            </li>
-            <li>
-              <label for="filter-news">
+                <input type="checkbox" name="array-of-benefits" id="filter-array-of-benefits">
+                </label>
+              </li>
+              <li>
+                <label for="filter-news">
                 Новости
-              <input type="checkbox" name="news" id="filter-news" checked>
-              </label>
-            </li>
-            <li>
-              <label for="filter-gallery">
+                <input type="checkbox" name="news" id="filter-news" checked>
+                </label>
+              </li>
+              <li>
+                <label for="filter-gallery">
                 Галерея
-              <input type="checkbox" name="gallery" id="filter-gallery">
-              </label>
-            </li>
-            <li>
-              <label for="filter-basket"> 
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                </label>
+              </li>
+              <li>
+                <label for="filter-basket"> 
                 Корзина
-              <input type="checkbox" name="basket" id="filter-basket">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">Показать</button>
-      </form>
-    </aside>
+                <input type="checkbox" name="basket" id="filter-basket">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </aside>
       <main>
         <h2>Сортировать:</h2>
         <ul>
@@ -132,11 +135,11 @@
       </main>
       </section>
       <section>
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
+        <ul class="">
+          <li class=""><a href="#">1</a></li>
+          <li class=""><a href="#">2</a></li>
+          <li class=""><a href="#">3</a></li>
+          <li class=""><a href="#">Следующая</a></li>
         </ul>
       </section>
       <section>
@@ -146,7 +149,7 @@
           <p>191186, Санкт-Петербург,<br>
           ул. Б.Конюшенная, д. 19/8</p>
           <p>тел. +7 (813) 275-75 75</p>
-          <a class="button">Напишите нам</a>
+          <button class="button">Напишите нам</button> 
         </address>
         <section class="pop-up">
           <form action="" method="get">
