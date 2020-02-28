@@ -14,10 +14,10 @@ body {
   letter-spacing: normal;
   background-color: #eeeeee; 
 }
-svg:hover {
+ .header-link:hover svg {
 	fill: #303030;
 }
-svg:active {
+ .header-link:active svg {
 	fill: #a6a6a6;
 }
 .header .header-nav  {
@@ -36,10 +36,10 @@ svg:active {
 .nav-list .nav-item {
 	margin-left: 46px;
 }
-.nav-list .nav-item:hover {
+.nav-list .item-link:hover  {
 	color: #fb565a;
 }
-.nav-list .nav-item:active {
+.nav-list .item-link:active  {
 	color: #000000;
-	fill: 0.3;
+	opacity: 0.3;
 }
