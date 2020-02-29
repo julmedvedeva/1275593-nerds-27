@@ -26,18 +26,19 @@ ul li {
 .header .header-nav  {
 	display: flex;
 	flex-direction: row; 
-	justify-content: space-between;
-	text-transform: uppercase;
+	justify-content: space-between;	
 }
 .header .nav-list  {
 	list-style: none;
 	display: flex;
 	align-items: center;
 	padding: 0;
-  	margin: 0;   
+  	margin: 0;  
+  	text-transform: uppercase; 
 }
 .basket {
 	padding-right: 26px;
+	padding-left: 200px;
 
 }
 .nav-list .nav-item {
@@ -50,9 +51,52 @@ ul li {
 	color: #000000;
 	opacity: 0.3;
 }
+.brands .brands-list {
+	list-style: none;
+	display: flex;
+	margin: 0 90px;
+	justify-content: center;	
+}
+.brands-list .brands-item {
+	padding-left: 90px; 
+}
+.brands-list svg {
+	opacity: 0.2;
+}
+.brands-item:hover svg {
+	opacity: 1;
+}
+.brands-item:active svg {
+	opacity: 0.1;
+}
+.services .services-list {
+	display: flex;
+	margin-right: 50px;
+	justify-content: space-around;
+}
 .button {
 	display: inline-block;
-	min-width: 240px;
-	min-height: 50px;
-	color: red;
+    vertical-align: top;
+    padding: 16px 40px;
+    border: 0;
+    border-radius: 3px;
+    font: inherit;
+    font-weight: 500;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button-red {
+	background-color: #fb565a;
+}
+.button-red-xs {
+	background-color: #fb565a;
+}
+.button-green {
+	background-color: #00ca74;
+}
+.button-yellow {
+	background-color: #efc84a;
 }
