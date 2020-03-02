@@ -4,18 +4,19 @@
 }
 body {
 	margin: 0;
-  	padding: 0;
-  	font-family: "Roboto", "Arial", sans-serif;
-  	font-size: 16px;
-  	font-weight: 100;
-  	line-height: 24px;
-  	font-stretch: normal;
-  	font-style: normal;
-  	letter-spacing: normal;
-  	background-color: #eeeeee; 
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 24px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  background-color: #eeeeee; 
 }
 ul li {
 	list-style: none;
+
 }
 h2 {
 	font-size: 45px;
@@ -23,6 +24,12 @@ h2 {
 h6 {
 	font-size: 16px;
 	text-transform: uppercase;
+}
+a:visited {
+	color: black;
+}
+.button:visited {
+	color: #ffffff;
 }
  .header-link:hover svg {
 	fill: #303030;
@@ -39,7 +46,7 @@ h6 {
 	list-style: none;
 	display: flex;
 	align-items: center;
-	padding: 0;
+	padding-left: 200px;
   margin: 0;  
   text-transform: uppercase; 
 }
@@ -79,13 +86,16 @@ h6 {
 .brands-item:active svg {
 	opacity: 0.1;
 }
+.slider-list {
+	padding-inline-start: 0;
+}
 .services {
 	margin-top: 80px;
 	padding-bottom: 80px;
 }
 .services-list {
 	width: 100%;
-   
+  padding-inline-start: 0;
   margin: 0;
   box-sizing: border-box; 
 }
@@ -115,7 +125,7 @@ h6 {
 } */
 .stat {
 	width: 100%;
-  padding: 0 90px; 
+ /*padding: 0 90px;*/ 
   margin: 160px 0;
   box-sizing: border-box; 
 }
@@ -125,10 +135,11 @@ h6 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 50px;
-  /*text-align: center;*/
+  padding: 0 -50px;
+  text-align: center;
   line-height: 1;
   text-align: left;
+
 }
 .statistics-item {
 	display: flex;
@@ -141,17 +152,17 @@ h6 {
 }
 .button {
 	display: inline-block;
-    vertical-align: top;
-    padding: 16px 40px;
-    border: 0;
-    border-radius: 3px;
-    font: inherit;
-    font-weight: 500;
-    line-height: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
+  vertical-align: top;
+  padding: 16px 40px;
+  border: 0;
+  border-radius: 3px;
+  font: inherit;
+  font-weight: 500;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
 }
 .button-red {
 	background-color: #fb565a;
