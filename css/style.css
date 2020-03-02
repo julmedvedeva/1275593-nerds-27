@@ -45,9 +45,12 @@ h6 {
 }
 .basket {
 	padding-right: 26px;
-	padding-left: 200px;
-
 }
+	
+.nav-basket { 
+	padding-left: 200px;
+}
+
 .nav-list .nav-item {
 	margin-left: 46px;
 }
@@ -82,7 +85,7 @@ h6 {
 }
 .services-list {
 	width: 100%;
-  padding: 0 90px; 
+   
   margin: 0;
   box-sizing: border-box; 
 }
@@ -95,8 +98,12 @@ h6 {
 .services-item:first-child {
 	margin-right: 50px;
 }
-.services-item:not(:first-child) {
+
+.services-item:not(:last-child):not(:first-child) {
 	margin: 0 50px;
+}
+.services-item:last-child {
+	margin-left: 50px;
 }
 /*.services-item {
 	display: flex;
