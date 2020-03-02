@@ -20,6 +20,8 @@ ul li {
 }
 h2 {
 	font-size: 45px;
+	line-height: 1;
+  text-align: left;
 }
 h6 {
 	font-size: 16px;
@@ -50,14 +52,11 @@ a:visited {
   margin: 0;  
   text-transform: uppercase; 
 }
-.basket {
-	padding-right: 26px;
-}
-	
 .nav-basket { 
 	padding-left: 200px;
+	margin: 0;*/
+	
 }
-
 .nav-list .nav-item {
 	margin-left: 46px;
 }
@@ -67,6 +66,11 @@ a:visited {
 .nav-list .item-link:active  {
 	color: #000000;
 	opacity: 0.3;
+}
+.basket {
+	left: 1200px;
+  top: 28px;
+  position: absolute;
 }
 .brands .brands-list {
 	list-style: none;
@@ -125,21 +129,37 @@ a:visited {
 } */
 .stat {
 	width: 100%;
- /*padding: 0 90px;*/ 
+ /*padding: 0 90px;*/
   margin: 160px 0;
   box-sizing: border-box; 
+  justify-content: space-between;
 }
+.stat-item:nth-child(2) {
+	padding-left: 140px;
+}
+.stat-list {
+	padding: 0;
 
+}
 .stat-item {
 	display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 -50px;
   text-align: center;
   line-height: 1;
   text-align: left;
+}
+p .stat-item {
+	font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+}
+h2 .stat-item {
 
+  line-height: 1;
+  text-align: left;
+ 
 }
 .statistics-item {
 	display: flex;
@@ -147,9 +167,16 @@ a:visited {
   align-items: center;
 	text-align: center;
 } 
+.activity-list {
+	padding: 0;
+	margin: 0;
+}
 .activity-item {
 	list-style: disc;
+	padding: 0;
+	margin: 0;
 }
+
 .button {
 	display: inline-block;
   vertical-align: top;
