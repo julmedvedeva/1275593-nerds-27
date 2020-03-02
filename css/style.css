@@ -40,8 +40,8 @@ h6 {
 	display: flex;
 	align-items: center;
 	padding: 0;
-  	margin: 0;  
-  	text-transform: uppercase; 
+  margin: 0;  
+  text-transform: uppercase; 
 }
 .basket {
 	padding-right: 26px;
@@ -76,6 +76,10 @@ h6 {
 .brands-item:active svg {
 	opacity: 0.1;
 }
+.services {
+	margin-top: 80px;
+	padding-bottom: 80px;
+}
 .services-list {
 	width: 100%;
   padding: 0 90px; 
@@ -84,8 +88,15 @@ h6 {
 }
 .row {
   display: flex;
+  flex-direction: row
   justify-content: space-between;
   width: 100%;
+}
+.services-item:first-child {
+	margin-right: 50px;
+}
+.services-item:not(:first-child) {
+	margin: 0 50px;
 }
 /*.services-item {
 	display: flex;
