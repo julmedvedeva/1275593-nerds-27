@@ -52,13 +52,12 @@ a:visited {
   margin: 0;  
   text-transform: uppercase; 
 }
-.nav-basket { 
-	padding-left: 200px;
-	margin: 0;*/
-	
-}
 .nav-list .nav-item {
 	margin-left: 46px;
+}
+/*.nav-list .nav-basket { 
+	padding-left: 200px;
+	margin: 0;*/
 }
 .nav-list .item-link:hover  {
 	color: #fb565a;
@@ -68,9 +67,9 @@ a:visited {
 	opacity: 0.3;
 }
 .basket {
-	left: 1200px;
+	left: 1000px;
   top: 28px;
-  position: absolute;
+ 	margin-right: 15px; 
 }
 .brands .brands-list {
 	list-style: none;
@@ -105,28 +104,27 @@ a:visited {
 }
 .row {
   display: flex;
-  flex-direction: row
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 .services-item:first-child {
 	margin-right: 50px;
 }
-
 .services-item:not(:last-child):not(:first-child) {
 	margin: 0 50px;
 }
 .services-item:last-child {
 	margin-left: 50px;
 }
-/*.services-item {
-	display: flex;
+.services-item {
+	/*display: flex;*/
   flex-direction: column;
-  align-items: center;
+  /*align-items: center;*/
   width: 100%;
-  padding: 0 50px;
-  text-align: center;
-} */
+  padding: 0;
+ /* text-align: center;*/
+}
 .stat {
 	width: 100%;
  /*padding: 0 90px;*/
@@ -138,10 +136,9 @@ a:visited {
 	padding-left: 140px;
 }
 .stat-list {
-	padding: 0;
-
+	padding-left: 0;
 }
-.stat-item {
+.column.right {
 	display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,17 +153,23 @@ p .stat-item {
   padding: 0;
 }
 h2 .stat-item {
-
   line-height: 1;
   text-align: left;
- 
 }
 .statistics-item {
 	display: flex;
+	width: auto;
   flex-direction: column;
-  align-items: center;
-	text-align: center;
+  align-items: left;
+	text-align: left;
+	box-sizing: border-box;
 } 
+.statistics-item .percent {
+	font-size: 10px;
+	font-weight: bold;
+	vertical-align: top;
+  font-size: 20px;
+}
 .activity-list {
 	padding: 0;
 	margin: 0;
@@ -176,7 +179,6 @@ h2 .stat-item {
 	padding: 0;
 	margin: 0;
 }
-
 .button {
 	display: inline-block;
   vertical-align: top;
