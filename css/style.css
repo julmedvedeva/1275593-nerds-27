@@ -13,20 +13,40 @@ body {
   font-style: normal;
   letter-spacing: normal;
   background-color: #eeeeee; 
+  text-align: left;
 }
 ul li {
 	list-style: none;
-
 }
-h2 {
+/*h2 {
 	font-size: 45px;
 	line-height: 1;
   text-align: left;
+}*/
+.first {
+	font-size: 55px;
+	line-height: 1;
 }
-h6 {
+.second {
+	font-size: 45px;
+	line-height: 1;
+}
+.third {
+	font-size: 36px;
+}
+.fourth {
+	font-size: 24px;
+}
+.fifth {
+	font-size: 18px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.sixth {
 	font-size: 16px;
 	text-transform: uppercase;
 }
+
 a:visited {
 	color: black;
 }
@@ -147,12 +167,12 @@ a:visited {
   line-height: 1;
   text-align: left;
 }
-p .stat-item {
+.stat-item {
 	font-size: 16px;
   line-height: 1.5;
   padding: 0;
 }
-h2 .stat-item {
+.stat-item {
   line-height: 1;
   text-align: left;
 }
@@ -192,6 +212,7 @@ h2 .stat-item {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  background-color: #fb565a;
 }
 .button-red {
 	background-color: #fb565a;
@@ -205,3 +226,49 @@ h2 .stat-item {
 .button-yellow {
 	background-color: #efc84a;
 }
+.main-footer {
+	justify-content: normal;
+	/*background-color: white;*/
+	}
+.social-button {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	padding-right: 50px;
+}
+.social-button:first-child {
+	margin: 0;
+	
+}
+.social-button:not(:last-child):not(:first-child) {
+	margin: 0 45px;
+}
+/*.social-button:last-child {
+	margin-left: 45px;
+}*/
+.rectangle {
+	font-size: 16px;
+	font-style: none;
+	width: 220px;
+	height: 120px;
+  background: #ffffff;
+  padding: 50px;
+  padding-bottom: 200px;
+  margin: 50px 0;
+ }
+ /*.social {
+  width: 71px;
+  height: 71px;
+  background-color: #7e7e7e;
+  border-radius: 50px;
+  text-align: center;
+  display: table;  
+}*/
+ .social-button {
+ 	width: 50px; 
+	height: 50px;
+	background: #83A7C9;
+	border-radius: 50%;
+	/*display: table-cell;
+  vertical-align: middle;*/
+ }
