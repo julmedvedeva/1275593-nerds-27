@@ -46,7 +46,6 @@ ul li {
 	font-size: 16px;
 	text-transform: uppercase;
 }
-
 a:visited {
 	color: black;
 }
@@ -217,7 +216,7 @@ a:visited {
 .button-red {
 	background-color: #fb565a;
 }
-.button-red-xs {
+.button-xs {
 	background-color: #fb565a;
 }
 .button-green {
@@ -228,24 +227,33 @@ a:visited {
 }
 .main-footer {
 	justify-content: normal;
-	/*background-color: white;*/
-	}
+	background-color: white;
+}
+ .social {
+ 	display: flex; 
+ 	padding: 75px 0;
+ 	margin: 0;
+ }
 .social-button {
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
-	padding-right: 50px;
+	width: 71px; 
+	height: 71px;
+	background: #eeeeee;
+	border-radius: 50%;
+	justify-content: center;
+  align-items: center;
 }
 .social-button:first-child {
-	margin: 0;
-	
+	margin-right: 12px;
 }
 .social-button:not(:last-child):not(:first-child) {
-	margin: 0 45px;
+	margin: 0 12px;
 }
-/*.social-button:last-child {
-	margin-left: 45px;
-}*/
+.social-button:last-child {
+	margin: 0 15px;
+}
 .rectangle {
 	font-size: 16px;
 	font-style: none;
@@ -256,19 +264,19 @@ a:visited {
   padding-bottom: 200px;
   margin: 50px 0;
  }
- /*.social {
-  width: 71px;
-  height: 71px;
-  background-color: #7e7e7e;
-  border-radius: 50px;
-  text-align: center;
-  display: table;  
-}*/
- .social-button {
+.right.proposal  {
+	text-align: left;
+	display: flex;
+  align-items: baseline;
+  padding-left: 140px;
+  padding-top: 50px;
+
+}
+/* .social-button {
  	width: 50px; 
 	height: 50px;
 	background: #83A7C9;
 	border-radius: 50%;
-	/*display: table-cell;
-  vertical-align: middle;*/
- }
+	display: flex;
+ flex-direction: row;
+ } */
