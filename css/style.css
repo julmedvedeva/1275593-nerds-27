@@ -276,9 +276,21 @@ background-color: #e74246;
 	background-color: #00ca74;
 	margin-top: 17px;
 }
+.button-green:hover {
+	background-color: #00bc6c;
+}
+.button-green:active {
+	background-color: #00aa62;
+}
 .button-yellow {
 	background-color: #efc84a;
 	margin-top: 17px;
+}
+.button-yellow:hover {
+	background-color: #eab534;
+}
+.button-yellow:active {
+	background-color: #e5a722;
 }
 .main-footer {
 	justify-content: normal;
@@ -311,6 +323,9 @@ background-color: #e74246;
 .social-button:last-child {
 	margin: 0 15px;
 }
+.maps {
+	z-index: 1;
+}
 .rectangle {
 	font-size: 16px;
 	font-style: none;
@@ -318,7 +333,8 @@ background-color: #e74246;
 	background: #ffffff;
  	/*margin: 50px 0;*/
   padding: 48px 48px 47px 51px;
-  position: relative;
+  z-index: 9999;
+  
  }
 .adress {
 	color: #666666; 
@@ -330,4 +346,10 @@ background-color: #e74246;
   align-items: baseline;
   padding-left: 140px;
   padding-top: 50px;
+}
+.social-button:hover {
+	background-color: #e74246;
+}
+.social-button:active {
+	background-color: #d7373b;
 }
