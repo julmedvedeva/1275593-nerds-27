@@ -525,6 +525,12 @@ background-color: #e74246;
 .filters {
 	max-width: 261px;
 }
+.mesh {
+	padding: 0;
+}
+.singularity {
+	padding: 0;
+}
 .title .first {
 	margin: 0;
 	padding-top: 82px;
@@ -536,10 +542,10 @@ background-color: #e74246;
 	display: flex;
 	justify-content: space-between;
 }
-/*.assort {
+.assort {
 	display: flex;
   justify-content: space-between;
-}*/
+}
 .assort-item {
 	padding-right: 26px;
 	vertical-align: baseline;
