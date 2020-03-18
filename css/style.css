@@ -462,6 +462,9 @@ background-color: #e74246;
 .social-button:last-child {
 	margin: 0 15px;
 }
+.contacts {
+	position: relative;
+}
 .rectangle {
 	font-size: 16px;
 	font-style: none;
@@ -473,9 +476,8 @@ background-color: #e74246;
   left: 251px;
 }
 .maps {
-	position: relative;
 	max-width: 100%;
-	padding: 0 140px;
+	
 }
 .address {
 	color: #666666;
@@ -521,6 +523,7 @@ background-color: #e74246;
 	padding-bottom: 35px;
 	padding-left: 10px;
 }
+
 /* тут идет вторая страница*/
 .filters {
 	max-width: 261px;
