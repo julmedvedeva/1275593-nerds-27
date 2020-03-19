@@ -39,6 +39,12 @@
                      <button class="filter-cost range-handle range-handle-max" type="button" aria-label="Максимально"> </button>
                   </div>
                 </div>
+                <p class="filter-cost period">
+                  <label class="filter-cost-label">От 
+                    <input class="filter-cost-input" type="text" name="min-price" value="0"></label>
+                  <label class="filter-cost-label max-cost">До 
+                    <input class="filter-cost-input" type="text" name="mфч-price" value="15000"></label>
+                </p>    
               </div>
             </fieldset>
             <fieldset class="filters-form-fieldset filters-form-grid">
@@ -53,7 +59,7 @@
                   <label class="filter-form-label radio" for="filter-fixed" for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="grid-item">
-                  <input type="radio" name="grid" id="filter-elastic" value="elastic">
+                  <input class="filters-form-radio" type="radio" name="grid" id="filter-elastic" value="elastic">
                   <label class="filter-form-label radio" for="filter-elastic">Резиновая</label>
                 </li>
               </ul>
@@ -62,73 +68,102 @@
               <legend class="fifth">Особенности</legend>
               <ul class="feature-list">
                 <li class="feature-item">
-                  <input type="checkbox" name="slider" id="filter-slider" checked>
-                  <label for="filter-slider">Слайдер</label>
+                  <input class="filter-form-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                  <label class="filter-form-label checkbox" for="filter-slider">Слайдер</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="array-of-benefits" id="filter-array-of-benefits">
-                  <label for="filter-array-of-benefits">Блок преимуществ</label>
+                  <input class="filter-form-checkbox"  type="checkbox" name="array-of-benefits" id="filter-array-of-benefits">
+                  <label class="filter-form-label checkbox" for="filter-array-of-benefits">Блок преимуществ</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="news" id="filter-news" checked>
-                  <label for="filter-news">Новости</label>
+                  <input class="filter-form-checkbox"  type="checkbox" name="news" id="filter-news" checked>
+                  <label class="filter-form-label checkbox" for="filter-news">Новости</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="gallery" id="filter-gallery">
-                  <label for="filter-gallery">                Галерея</label>
+                  <input class="filter-form-checkbox"  type="checkbox" name="gallery" id="filter-gallery">
+                  <label class="filter-form-label checkbox" for="filter-gallery">                Галерея</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="basket" id="filter-basket">
-                  <label for="filter-basket">Корзина</label>
+                  <input class="filter-form-checkbox "  type="checkbox" name="basket" id="filter-basket">
+                  <label class="filter-form-label checkbox" for="filter-basket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
             <button class="button button-grey" type="submit">Показать</button>
           </form>
         <div class="catalog-content">
-        <section class="assort row">
-          <h5 class="fifth">Сортировать:</h5>
-          <ul class="assort assort-list">
-            <li class="assort-item"><a href="#">По цене</li> 
-            <li class="assort-item"><a href="#">По типу</li>
-            <li class="assort-item"><a href="#">По названию</li>
-          </ul>
-          <a href="#"><img src="img/icon-down-dir.svg"></a>
-          <a href="#"><img src="img/icon-up-dir.svg"></a>
-        </section>
-        <div class="catalog">
+          <div class="catalog-header row">
+            <h5 class="fifth">Сортировать:</h5>
+            <div class="catalog-sort">
+              <ul class="catalog-sort sort-list">
+                <li class="sort-item"><a class="sort-list-link link-active " href="#">По цене</li> 
+                <li class="sort-item"><a class="sort-list-link"  href="#">По типу</li>
+                <li class="sort-item"><a class="sort-list-link" href="#">По названию</li>
+              </ul>
+              <ul class="catalog-sort-direction sort-directon">
+                <li class="sort-directon-item">
+                  <a class="sort-directon-link action down"  href="#" aria-label="Вниз"></a>
+                </li>
+                 <li class="sort-directon-item">
+                  <a class="sort-directon-link" href="#" aria-label="Вверх"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <ul class="catalog-list">
             <li class="catalog-item product-card">
               <img src="img/img/img-sedona.jpg" alt="Sedona">
-              <div class="product-card-description">
-                <h3 class="third">Sedona</h3>
-                <p>Информационный сайт для туристов</p>
-                <a class="button">9 900 РУБ.</a>
+              <div class="product-card-description block">
+                <h5 class="fifth"><a class="product-card-link" href="#">Sedona</a></h5>
+                <p class="product-card-text text-fourth">Информационный сайт для туристов</p>
+                <a class="button button-product-card">9 900 РУБ.</a>
               </div>
             </li>
             <li class="catalog-item product-card">
-              <!--<h3>Pink</h3>-->
               <img src="img/img/img-pink.jpg"  alt="Pink">
+              <div class="product-card-description block">
+                <h5 class="fifth"><a class="product-card-link" href="#">Pink App</a></h5>
+                  <p class="product-card-text">Продуктовый лендинг
+                  приложения для iOS и Android</p>
+                  <a class="button button-product-card">9 900 РУБ.</a>
+              </div>
             </li>
             <li class="catalog-item product-card">
-              <!--<h3>Барбершоп</h3>-->
               <img src="img/img/img-barbershop.jpg"  alt="Borodinsky">
+              <div class="product-card-description block">
+              <h5 class="fifth"><a class="product-card-link" href="#">Барбершоп</a></h5>
+              <p class="product-card-text text-fourth">Сайт салона красоты. Для мужчин, да.</p>
+              <a class="button button-product-card">9 900 РУБ.</a>
+              </div>
             </li>
             <li class="catalog-item product-card">
-              <!--<h3>Mishka</h3>-->
               <img src="img/img/img-mishka.jpg" alt="Mishka">
+              <div class="product-card-description block">
+              <h5 class="fifth"><a class="product-card-link" href="#">Mishka</a></h5>
+              <p class="product-card-text text-fourth">Интернет-магазин 
+              вязаных игрушек</p>
+              <a class="button button-product-card">9 900 РУБ.</a>
+              </div>
             </li>
             <li class="catalog-item product-card">
-              <!--<h3>A+</h3>-->
               <img src="img/img/img-aplus.jpg"  alt="A+">
+              <div class="product-card-description block">
+              <h5 class="fifth"><a class="product-card-link" href="#">A Plus</a></h5>
+              <p class="product-card-text">Лендинг курсов повышения квалификации</p>
+              <a class="button button-product-card">9 900 РУБ.</a>
+              </div>
             </li>
             <li class="catalog-item product-card">
-              <!--<h3>Кваст</h3>-->
               <img src="img/img/img-kvast.jpg"  alt="Кваст">
+              <div class="product-card-description block">
+              <h5 class="fifth"><a class="product-card-link" href="#">Кваст</a></h5>
+              <p class="product-card-text">Промо-сайт производителя
+              крафтового кваса</p>
+              <a class="button button-product-card">9 900 РУБ.</a>
+              </div>
             </li>
           </ul> 
-        </div>
-        <section class="pagination row">
+          <section class="pagination row">
             <ul class="pagination-list">
               <li class="pagination-item"><a class="button-grey button-pagination button-pagination-active" href="#">1</a></li>
               <li class="pagination-item"><a class="button-grey button-pagination" href="#">2</a></li>
