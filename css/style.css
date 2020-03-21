@@ -501,6 +501,9 @@ a:visited {
 	margin: 15px 0;
 	padding: 16px 44px;
 }
+.button-feedback:hover {
+	background-color: #e74246;
+}
 .right.proposal  {
 	text-align: left;
 	display: flex;
