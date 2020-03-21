@@ -538,7 +538,6 @@ background-color: #e74246;
 .catalog-main {
 	display: flex;
 	justify-content: space-around;
-  padding-top: 55px;
   padding-bottom: 55px;
 }
 .title .first {
@@ -549,7 +548,7 @@ background-color: #e74246;
 }
 .filters-form {
 	width: 260px;
-	margin-top: -19px;
+	padding-top: 63px;
 	margin-right: -219px;
 }
 .filters-form-fieldset {
@@ -705,7 +704,11 @@ background-color: #e74246;
 }
 .catalog-content {
 	width: 760px;
-	    padding-left: 344px;
+	padding-top: 63px;
+	padding-left: 344px;
+}
+.fifth-sort {
+	margin: 0;
 }
 .sort-list {
 	display: flex;
