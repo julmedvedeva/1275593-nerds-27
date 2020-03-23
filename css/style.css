@@ -526,7 +526,17 @@ a:visited {
 	background-color: #e74246;
 }
 .social-button:active {
-	background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+.social-vk:active {
+  opacity: 0.3;
+}
+.social-fb:active {
+  opacity: 0.3;
+}
+.social-insta:active {
+  opacity: 0.3;
 }
 .logo-color {
 	padding-bottom: 35px;
