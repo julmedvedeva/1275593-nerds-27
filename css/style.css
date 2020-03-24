@@ -207,17 +207,19 @@ a:visited {
   width: 100%;
   background-position: 93% -12%;
   background-repeat: no-repeat;
+  display: none;
 }
 .slide:nth-child(1) {
-	background-image: url(https://github.com/htmlacademy-htmlcss/1275593-nerds-27/blob/master/img/slide/slide1.png?raw=true);
+	background-image: url(../img/slide/slide1.png);
 }
 .slide:nth-child(2) {
-	background-image: url(https://raw.githubusercontent.com/julmedvedeva/1275593-nerds-27/master/img/slide/slide2.png);
-	display: none;
+	background-image: url(../img/slide/slide2.png);
 }
 .slide:nth-child(3) {
-	background-image: url(https://raw.githubusercontent.com/julmedvedeva/1275593-nerds-27/master/img/slide/slide3.png);
-	display: none;
+	background-image: url(../img/slide/slide3.png);
+}
+.slide-visible {
+  display: block;
 }
 .slide-content {
 	width: 560px;
@@ -475,7 +477,6 @@ a:visited {
 	border-radius: 50%;
 	justify-content: center;
   align-items: center;
-  margin: : 69px 12px 69px 0;
 }
 .social-button:first-child {
 	margin-right: 12px;
